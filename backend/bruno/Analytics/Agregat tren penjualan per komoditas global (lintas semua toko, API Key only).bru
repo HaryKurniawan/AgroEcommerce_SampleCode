@@ -1,0 +1,16 @@
+meta {
+  name: Agregat tren penjualan per komoditas global (lintas semua toko, API Key only)
+  type: http
+  seq: 152
+}
+
+get {
+  url: {{baseUrl}}/api/analytics/tren-komoditas-global
+  body: none
+  auth: none
+}
+
+query {
+  kodeKomoditasGlobal: 
+  bulanKe: 
+}

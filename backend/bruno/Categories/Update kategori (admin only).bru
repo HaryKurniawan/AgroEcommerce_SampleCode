@@ -1,0 +1,21 @@
+meta {
+  name: Update kategori (admin only)
+  type: http
+  seq: 68
+}
+
+patch {
+  url: {{baseUrl}}/api/kategori/:id
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

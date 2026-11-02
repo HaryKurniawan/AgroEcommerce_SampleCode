@@ -1,0 +1,21 @@
+meta {
+  name: Update pengguna (Admin only)
+  type: http
+  seq: 22
+}
+
+patch {
+  url: {{baseUrl}}/api/pengguna/:id
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

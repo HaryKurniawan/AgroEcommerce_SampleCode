@@ -1,0 +1,15 @@
+meta {
+  name: Get my notifikasi
+  type: http
+  seq: 103
+}
+
+get {
+  url: {{baseUrl}}/api/notifikasi
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

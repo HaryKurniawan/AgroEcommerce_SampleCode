@@ -1,0 +1,15 @@
+meta {
+  name: Get all seller courier affiliations
+  type: http
+  seq: 17
+}
+
+get {
+  url: {{baseUrl}}/api/pengguna/penjual-courier-affiliations
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

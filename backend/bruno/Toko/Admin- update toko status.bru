@@ -1,0 +1,21 @@
+meta {
+  name: Admin: update toko status
+  type: http
+  seq: 38
+}
+
+patch {
+  url: {{baseUrl}}/api/toko/admin/:id/status
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

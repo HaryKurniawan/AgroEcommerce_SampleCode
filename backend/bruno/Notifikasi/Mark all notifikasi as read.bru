@@ -1,0 +1,15 @@
+meta {
+  name: Mark all notifikasi as read
+  type: http
+  seq: 105
+}
+
+patch {
+  url: {{baseUrl}}/api/notifikasi/read-all
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

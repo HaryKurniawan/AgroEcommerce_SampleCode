@@ -1,0 +1,19 @@
+meta {
+  name: Admin: Get all margin change history
+  type: http
+  seq: 48
+}
+
+get {
+  url: {{baseUrl}}/api/toko/harga/admin/riwayat
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  tokoId: 
+}

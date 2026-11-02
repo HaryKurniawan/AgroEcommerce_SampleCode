@@ -1,0 +1,15 @@
+meta {
+  name: Get all couriers for selection
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{baseUrl}}/api/pengguna/all-couriers-for-selection
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

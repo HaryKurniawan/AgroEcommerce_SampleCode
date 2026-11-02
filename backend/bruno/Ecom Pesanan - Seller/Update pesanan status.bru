@@ -1,0 +1,21 @@
+meta {
+  name: Update pesanan status
+  type: http
+  seq: 84
+}
+
+patch {
+  url: {{baseUrl}}/api/ecom-pesanan/:id/status
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

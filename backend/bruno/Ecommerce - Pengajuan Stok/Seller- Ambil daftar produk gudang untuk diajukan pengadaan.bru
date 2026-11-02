@@ -1,0 +1,20 @@
+meta {
+  name: Seller: Ambil daftar produk gudang untuk diajukan pengadaan
+  type: http
+  seq: 112
+}
+
+get {
+  url: {{baseUrl}}/api/ecommerce/pengajuan-stok/products
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  gudangId: 
+  all: 
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Update master produk details (Admin only)
+  type: http
+  seq: 136
+}
+
+patch {
+  url: {{baseUrl}}/api/master-produk/:id
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

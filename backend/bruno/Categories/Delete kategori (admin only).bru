@@ -1,0 +1,15 @@
+meta {
+  name: Delete kategori (admin only)
+  type: http
+  seq: 69
+}
+
+delete {
+  url: {{baseUrl}}/api/kategori/:id
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

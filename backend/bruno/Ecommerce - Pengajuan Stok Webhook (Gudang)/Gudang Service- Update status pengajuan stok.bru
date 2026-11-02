@@ -1,0 +1,11 @@
+meta {
+  name: Gudang Service: Update status pengajuan stok
+  type: http
+  seq: 117
+}
+
+patch {
+  url: {{baseUrl}}/api/ecommerce/pengajuan-stok/webhook/:id/status
+  body: none
+  auth: none
+}

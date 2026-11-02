@@ -1,0 +1,20 @@
+meta {
+  name: Courier: get assigned tasks
+  type: http
+  seq: 90
+}
+
+get {
+  url: {{baseUrl}}/api/ecom-pesanan/courier/tasks
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  page: 
+  limit: 
+}

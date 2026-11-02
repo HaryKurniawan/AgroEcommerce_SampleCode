@@ -1,0 +1,15 @@
+meta {
+  name: Get overall ecosystem statistics for Super Admin dashboard
+  type: http
+  seq: 26
+}
+
+get {
+  url: {{baseUrl}}/api/core/dashboard/stats
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

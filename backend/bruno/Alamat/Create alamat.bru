@@ -1,0 +1,15 @@
+meta {
+  name: Create alamat
+  type: http
+  seq: 119
+}
+
+post {
+  url: {{baseUrl}}/api/alamat
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

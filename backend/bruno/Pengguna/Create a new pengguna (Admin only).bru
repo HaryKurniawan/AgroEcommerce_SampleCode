@@ -1,0 +1,21 @@
+meta {
+  name: Create a new pengguna (Admin only)
+  type: http
+  seq: 15
+}
+
+post {
+  url: {{baseUrl}}/api/pengguna
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

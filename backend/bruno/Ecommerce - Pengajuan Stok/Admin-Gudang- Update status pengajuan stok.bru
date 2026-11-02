@@ -1,0 +1,15 @@
+meta {
+  name: Admin/Gudang: Update status pengajuan stok
+  type: http
+  seq: 116
+}
+
+patch {
+  url: {{baseUrl}}/api/ecommerce/pengajuan-stok/:id/status
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

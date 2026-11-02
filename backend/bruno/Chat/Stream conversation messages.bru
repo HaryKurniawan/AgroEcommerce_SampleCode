@@ -1,0 +1,11 @@
+meta {
+  name: Stream conversation messages
+  type: http
+  seq: 127
+}
+
+get {
+  url: {{baseUrl}}/api/chat/conversations/:id/stream
+  body: none
+  auth: none
+}

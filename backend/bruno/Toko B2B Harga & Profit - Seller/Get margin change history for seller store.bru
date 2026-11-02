@@ -1,0 +1,15 @@
+meta {
+  name: Get margin change history for seller store
+  type: http
+  seq: 43
+}
+
+get {
+  url: {{baseUrl}}/api/toko/harga/riwayat
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

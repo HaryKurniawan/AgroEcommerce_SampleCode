@@ -1,0 +1,15 @@
+meta {
+  name: Admin: Update default B2B margin for a specific store
+  type: http
+  seq: 46
+}
+
+patch {
+  url: {{baseUrl}}/api/toko/harga/admin/:tokoId/config
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

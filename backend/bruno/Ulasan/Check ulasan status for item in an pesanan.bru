@@ -1,0 +1,15 @@
+meta {
+  name: Check ulasan status for item in an pesanan
+  type: http
+  seq: 177
+}
+
+get {
+  url: {{baseUrl}}/api/ulasan/pesanan/:pesananId/status
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

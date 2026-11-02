@@ -1,0 +1,15 @@
+meta {
+  name: Admin: Ambil seluruh daftar pengajuan stok
+  type: http
+  seq: 113
+}
+
+get {
+  url: {{baseUrl}}/api/ecommerce/pengajuan-stok/admin/all
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

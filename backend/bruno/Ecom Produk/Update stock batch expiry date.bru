@@ -1,0 +1,15 @@
+meta {
+  name: Update stock batch expiry date
+  type: http
+  seq: 55
+}
+
+patch {
+  url: {{baseUrl}}/api/ecom-produk/:id/batches/:batchId/expiry
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

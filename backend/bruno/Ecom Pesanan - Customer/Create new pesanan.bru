@@ -1,0 +1,21 @@
+meta {
+  name: Create new pesanan
+  type: http
+  seq: 76
+}
+
+post {
+  url: {{baseUrl}}/api/ecom-pesanan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

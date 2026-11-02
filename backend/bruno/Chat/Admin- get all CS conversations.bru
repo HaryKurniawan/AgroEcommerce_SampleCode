@@ -1,0 +1,15 @@
+meta {
+  name: Admin: get all CS conversations
+  type: http
+  seq: 131
+}
+
+get {
+  url: {{baseUrl}}/api/chat/admin/conversations
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Delete produk
+  type: http
+  seq: 58
+}
+
+delete {
+  url: {{baseUrl}}/api/ecom-produk/:id
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

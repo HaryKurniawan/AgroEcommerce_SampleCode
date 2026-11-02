@@ -1,0 +1,2 @@
+echo "Menjalankan build sebelum push..."
+npm run build

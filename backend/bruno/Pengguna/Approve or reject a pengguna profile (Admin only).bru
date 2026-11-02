@@ -1,0 +1,21 @@
+meta {
+  name: Approve or reject a pengguna profile (Admin only)
+  type: http
+  seq: 24
+}
+
+patch {
+  url: {{baseUrl}}/api/pengguna/:id/approve
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

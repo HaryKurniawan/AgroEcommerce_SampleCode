@@ -1,0 +1,15 @@
+meta {
+  name: Seller: Konfirmasi & tutup pesanan yang sudah diterima pembeli
+  type: http
+  seq: 86
+}
+
+patch {
+  url: {{baseUrl}}/api/ecom-pesanan/:id/seller-confirm
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Get my alamat
+  type: http
+  seq: 118
+}
+
+get {
+  url: {{baseUrl}}/api/alamat
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

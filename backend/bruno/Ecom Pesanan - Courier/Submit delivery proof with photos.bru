@@ -1,0 +1,21 @@
+meta {
+  name: Submit delivery proof with photos
+  type: http
+  seq: 92
+}
+
+patch {
+  url: {{baseUrl}}/api/ecom-pesanan/:id/bukti-kirim
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

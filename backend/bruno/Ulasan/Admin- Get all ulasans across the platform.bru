@@ -1,0 +1,21 @@
+meta {
+  name: Admin: Get all ulasans across the platform
+  type: http
+  seq: 169
+}
+
+get {
+  url: {{baseUrl}}/api/ulasan/admin/all
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  page: 
+  limit: 
+  search: 
+}

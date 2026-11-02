@@ -1,0 +1,15 @@
+meta {
+  name: Get current pengguna keranjang
+  type: http
+  seq: 70
+}
+
+get {
+  url: {{baseUrl}}/api/keranjang
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

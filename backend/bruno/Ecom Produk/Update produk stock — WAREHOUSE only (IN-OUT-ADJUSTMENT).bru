@@ -1,0 +1,21 @@
+meta {
+  name: Update produk stock — WAREHOUSE only (IN/OUT/ADJUSTMENT)
+  type: http
+  seq: 60
+}
+
+patch {
+  url: {{baseUrl}}/api/ecom-produk/:id/stock
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

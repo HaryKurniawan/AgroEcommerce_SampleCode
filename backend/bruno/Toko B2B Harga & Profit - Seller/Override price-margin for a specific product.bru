@@ -1,0 +1,15 @@
+meta {
+  name: Override price/margin for a specific product
+  type: http
+  seq: 41
+}
+
+patch {
+  url: {{baseUrl}}/api/toko/harga/produk/:produkId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

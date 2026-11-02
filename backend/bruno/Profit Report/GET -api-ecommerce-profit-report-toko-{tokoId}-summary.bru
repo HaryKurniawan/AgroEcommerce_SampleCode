@@ -1,0 +1,22 @@
+meta {
+  name: GET /api/ecommerce/profit-report/toko/{tokoId}/summary
+  type: http
+  seq: 107
+}
+
+get {
+  url: {{baseUrl}}/api/ecommerce/profit-report/toko/:tokoId/summary
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  isB2B: 
+  groupBy: 
+  endDate: 
+  startDate: 
+}

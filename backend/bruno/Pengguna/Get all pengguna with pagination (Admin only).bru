@@ -1,0 +1,22 @@
+meta {
+  name: Get all pengguna with pagination (Admin only)
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{baseUrl}}/api/pengguna
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  page: 
+  limit: 
+  peran: 
+  search: 
+}

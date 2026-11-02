@@ -1,0 +1,19 @@
+meta {
+  name: Get batches for a specific store (seller view)
+  type: http
+  seq: 182
+}
+
+get {
+  url: {{baseUrl}}/api/delivery-batch/toko/:tokoId/batches
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  tanggal: 
+}

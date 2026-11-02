@@ -1,0 +1,21 @@
+meta {
+  name: Seller: Get ulasan for their produk
+  type: http
+  seq: 172
+}
+
+get {
+  url: {{baseUrl}}/api/ulasan/penjual/produk/:produkId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  tokoId: 
+  page: 
+  limit: 
+}

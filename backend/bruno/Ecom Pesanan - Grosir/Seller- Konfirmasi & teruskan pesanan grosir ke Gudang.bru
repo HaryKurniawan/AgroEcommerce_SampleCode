@@ -1,0 +1,21 @@
+meta {
+  name: Seller: Konfirmasi & teruskan pesanan grosir ke Gudang
+  type: http
+  seq: 94
+}
+
+patch {
+  url: {{baseUrl}}/api/ecom-pesanan/:id/konfirmasi-grosir
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

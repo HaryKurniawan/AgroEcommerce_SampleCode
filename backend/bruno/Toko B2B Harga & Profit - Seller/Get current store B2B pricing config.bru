@@ -1,0 +1,15 @@
+meta {
+  name: Get current store B2B pricing config
+  type: http
+  seq: 39
+}
+
+get {
+  url: {{baseUrl}}/api/toko/harga/config
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,15 @@
+meta {
+  name: SSE Stream for real-time notifications
+  type: http
+  seq: 101
+}
+
+get {
+  url: {{baseUrl}}/api/notifikasi/stream
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Seller/Courier: advance pengiriman to next status (PREPARING→LOADING→IN_TRANSIT→ARRIVED)
+  type: http
+  seq: 91
+}
+
+patch {
+  url: {{baseUrl}}/api/ecom-pesanan/:id/pengiriman/next
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Get batches assigned to current courier
+  type: http
+  seq: 178
+}
+
+get {
+  url: {{baseUrl}}/api/delivery-batch/kurir/batches
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  tanggal: 
+}

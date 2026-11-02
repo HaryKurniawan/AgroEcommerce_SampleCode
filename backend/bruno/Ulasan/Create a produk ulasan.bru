@@ -1,0 +1,21 @@
+meta {
+  name: Create a produk ulasan
+  type: http
+  seq: 170
+}
+
+post {
+  url: {{baseUrl}}/api/ulasan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

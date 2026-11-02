@@ -1,0 +1,20 @@
+meta {
+  name: Get stock history for current penjual toko
+  type: http
+  seq: 32
+}
+
+get {
+  url: {{baseUrl}}/api/toko/my-toko/stock-history
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  page: 
+  limit: 
+}

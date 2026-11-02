@@ -1,0 +1,21 @@
+meta {
+  name: Admin: get all toko
+  type: http
+  seq: 35
+}
+
+get {
+  url: {{baseUrl}}/api/toko/admin/all
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  status: 
+  page: 
+  limit: 
+}

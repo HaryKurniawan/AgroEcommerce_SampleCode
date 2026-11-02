@@ -1,0 +1,21 @@
+meta {
+  name: Send broadcast notification (Admin only)
+  type: http
+  seq: 102
+}
+
+post {
+  url: {{baseUrl}}/api/notifikasi/broadcast
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

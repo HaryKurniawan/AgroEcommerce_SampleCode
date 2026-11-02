@@ -1,0 +1,23 @@
+meta {
+  name: Riwayat produk terlaris per bulan + perbandingan vs bulan sebelumnya
+  type: http
+  seq: 146
+}
+
+get {
+  url: {{baseUrl}}/api/analytics/produk-terlaris/riwayat
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  month: 
+  year: 
+  kategoriId: 
+  tokoId: 
+  limit: 
+}

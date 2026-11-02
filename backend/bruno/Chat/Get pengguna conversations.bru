@@ -1,0 +1,15 @@
+meta {
+  name: Get pengguna conversations
+  type: http
+  seq: 124
+}
+
+get {
+  url: {{baseUrl}}/api/chat/conversations
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

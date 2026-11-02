@@ -1,0 +1,11 @@
+meta {
+  name: Webhook Xendit — dipanggil oleh server Xendit secara otomatis
+  type: http
+  seq: 96
+}
+
+post {
+  url: {{baseUrl}}/api/payment/xendit-webhook
+  body: none
+  auth: none
+}

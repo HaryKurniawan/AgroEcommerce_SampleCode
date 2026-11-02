@@ -1,0 +1,15 @@
+meta {
+  name: Get batch detail with full pesanan info
+  type: http
+  seq: 179
+}
+
+get {
+  url: {{baseUrl}}/api/delivery-batch/kurir/batches/:id
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

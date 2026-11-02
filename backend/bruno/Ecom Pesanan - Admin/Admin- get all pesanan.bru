@@ -1,0 +1,21 @@
+meta {
+  name: Admin: get all pesanan
+  type: http
+  seq: 88
+}
+
+get {
+  url: {{baseUrl}}/api/ecom-pesanan/admin/all
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  status: 
+  page: 
+  limit: 
+}

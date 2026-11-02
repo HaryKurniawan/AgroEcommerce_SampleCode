@@ -1,0 +1,21 @@
+meta {
+  name: Update seller courier affiliation
+  type: http
+  seq: 20
+}
+
+patch {
+  url: {{baseUrl}}/api/pengguna/penjual/:tokoId/courier-affiliation
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Manually trigger batch generation for all stores
+  type: http
+  seq: 183
+}
+
+post {
+  url: {{baseUrl}}/api/delivery-batch/generate
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Admin: Approve takedown (hide ulasan)
+  type: http
+  seq: 175
+}
+
+patch {
+  url: {{baseUrl}}/api/ulasan/admin/:id/approve-takedown
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

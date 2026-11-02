@@ -1,0 +1,21 @@
+meta {
+  name: Create produk for toko (gudang staff)
+  type: http
+  seq: 52
+}
+
+post {
+  url: {{baseUrl}}/api/ecom-produk/toko/:tokoId
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

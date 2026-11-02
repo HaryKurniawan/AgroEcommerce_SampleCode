@@ -1,0 +1,15 @@
+meta {
+  name: Delete a master produk (Admin only)
+  type: http
+  seq: 137
+}
+
+delete {
+  url: {{baseUrl}}/api/master-produk/:id
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

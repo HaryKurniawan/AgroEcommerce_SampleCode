@@ -1,0 +1,21 @@
+meta {
+  name: Create a new toko (penjual)
+  type: http
+  seq: 29
+}
+
+post {
+  url: {{baseUrl}}/api/toko
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

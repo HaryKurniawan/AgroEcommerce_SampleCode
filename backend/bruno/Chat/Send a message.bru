@@ -1,0 +1,21 @@
+meta {
+  name: Send a message
+  type: http
+  seq: 128
+}
+
+post {
+  url: {{baseUrl}}/api/chat/conversations/:id/messages
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

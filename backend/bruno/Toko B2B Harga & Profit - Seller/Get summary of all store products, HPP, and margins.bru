@@ -1,0 +1,15 @@
+meta {
+  name: Get summary of all store products, HPP, and margins
+  type: http
+  seq: 42
+}
+
+get {
+  url: {{baseUrl}}/api/toko/harga/summary
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

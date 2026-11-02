@@ -1,0 +1,19 @@
+meta {
+  name: GET /api/ecommerce/profit-report/produk/{produkId}/stock-availability
+  type: http
+  seq: 109
+}
+
+get {
+  url: {{baseUrl}}/api/ecommerce/profit-report/produk/:produkId/stock-availability
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  requiredQty: 
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Update produk photos (min 2, max 3)
+  type: http
+  seq: 61
+}
+
+patch {
+  url: {{baseUrl}}/api/ecom-produk/:id/photos
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Seller: Ambil riwayat produk yang pernah diajukan
+  type: http
+  seq: 114
+}
+
+get {
+  url: {{baseUrl}}/api/ecommerce/pengajuan-stok/history/products
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

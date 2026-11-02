@@ -1,0 +1,21 @@
+meta {
+  name: Create a new master produk (Admin only)
+  type: http
+  seq: 134
+}
+
+post {
+  url: {{baseUrl}}/api/master-produk
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

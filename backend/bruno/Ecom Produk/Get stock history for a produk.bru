@@ -1,0 +1,20 @@
+meta {
+  name: Get stock history for a produk
+  type: http
+  seq: 53
+}
+
+get {
+  url: {{baseUrl}}/api/ecom-produk/:id/stock-history
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  page: 
+  limit: 
+}

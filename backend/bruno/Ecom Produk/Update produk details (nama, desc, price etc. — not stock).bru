@@ -1,0 +1,21 @@
+meta {
+  name: Update produk details (nama, desc, price etc. — not stock)
+  type: http
+  seq: 57
+}
+
+patch {
+  url: {{baseUrl}}/api/ecom-produk/:id
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

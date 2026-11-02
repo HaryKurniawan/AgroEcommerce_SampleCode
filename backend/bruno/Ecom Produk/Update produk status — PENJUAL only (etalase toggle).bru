@@ -1,0 +1,21 @@
+meta {
+  name: Update produk status — PENJUAL only (etalase toggle)
+  type: http
+  seq: 59
+}
+
+patch {
+  url: {{baseUrl}}/api/ecom-produk/:id/status
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

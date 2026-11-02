@@ -1,0 +1,20 @@
+meta {
+  name: GET /api/ecommerce/profit-report/admin/b2b-summary
+  type: http
+  seq: 108
+}
+
+get {
+  url: {{baseUrl}}/api/ecommerce/profit-report/admin/b2b-summary
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  endDate: 
+  startDate: 
+}

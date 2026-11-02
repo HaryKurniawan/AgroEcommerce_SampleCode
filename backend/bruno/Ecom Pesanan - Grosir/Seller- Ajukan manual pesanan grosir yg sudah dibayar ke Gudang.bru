@@ -1,0 +1,15 @@
+meta {
+  name: Seller: Ajukan manual pesanan grosir yg sudah dibayar ke Gudang
+  type: http
+  seq: 95
+}
+
+post {
+  url: {{baseUrl}}/api/ecom-pesanan/:id/ajukan-gudang
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

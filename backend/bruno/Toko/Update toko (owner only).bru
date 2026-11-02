@@ -1,0 +1,21 @@
+meta {
+  name: Update toko (owner only)
+  type: http
+  seq: 37
+}
+
+patch {
+  url: {{baseUrl}}/api/toko/:id
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

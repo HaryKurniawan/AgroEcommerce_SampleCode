@@ -1,0 +1,15 @@
+meta {
+  name: Update packaging variant price/status
+  type: http
+  seq: 64
+}
+
+patch {
+  url: {{baseUrl}}/api/ecom-produk/varian/:id
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

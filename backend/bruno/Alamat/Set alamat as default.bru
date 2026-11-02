@@ -1,0 +1,15 @@
+meta {
+  name: Set alamat as default
+  type: http
+  seq: 122
+}
+
+patch {
+  url: {{baseUrl}}/api/alamat/:id/default
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

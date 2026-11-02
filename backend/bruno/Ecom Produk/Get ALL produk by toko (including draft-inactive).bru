@@ -1,0 +1,22 @@
+meta {
+  name: Get ALL produk by toko (including draft/inactive)
+  type: http
+  seq: 50
+}
+
+get {
+  url: {{baseUrl}}/api/ecom-produk/toko/:tokoId/all
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  page: 
+  limit: 
+  search: 
+  status: 
+}

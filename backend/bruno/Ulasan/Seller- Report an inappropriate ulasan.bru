@@ -1,0 +1,15 @@
+meta {
+  name: Seller: Report an inappropriate ulasan
+  type: http
+  seq: 173
+}
+
+post {
+  url: {{baseUrl}}/api/ulasan/:id/report
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

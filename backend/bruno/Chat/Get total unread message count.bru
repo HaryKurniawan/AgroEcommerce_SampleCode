@@ -1,0 +1,15 @@
+meta {
+  name: Get total unread message count
+  type: http
+  seq: 130
+}
+
+get {
+  url: {{baseUrl}}/api/chat/unread-count
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

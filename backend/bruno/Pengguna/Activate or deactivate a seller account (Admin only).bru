@@ -1,0 +1,21 @@
+meta {
+  name: Activate or deactivate a seller account (Admin only)
+  type: http
+  seq: 25
+}
+
+patch {
+  url: {{baseUrl}}/api/pengguna/:id/toggle-status
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

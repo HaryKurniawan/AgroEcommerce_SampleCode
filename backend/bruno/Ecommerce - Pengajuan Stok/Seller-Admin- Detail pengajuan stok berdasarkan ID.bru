@@ -1,0 +1,15 @@
+meta {
+  name: Seller/Admin: Detail pengajuan stok berdasarkan ID
+  type: http
+  seq: 115
+}
+
+get {
+  url: {{baseUrl}}/api/ecommerce/pengajuan-stok/:id
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

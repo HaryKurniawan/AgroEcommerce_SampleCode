@@ -1,0 +1,15 @@
+meta {
+  name: Delete alamat
+  type: http
+  seq: 121
+}
+
+delete {
+  url: {{baseUrl}}/api/alamat/:id
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

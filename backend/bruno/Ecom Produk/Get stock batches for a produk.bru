@@ -1,0 +1,15 @@
+meta {
+  name: Get stock batches for a produk
+  type: http
+  seq: 54
+}
+
+get {
+  url: {{baseUrl}}/api/ecom-produk/:id/batches
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

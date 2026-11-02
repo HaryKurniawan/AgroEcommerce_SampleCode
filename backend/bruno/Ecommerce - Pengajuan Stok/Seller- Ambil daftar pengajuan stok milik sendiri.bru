@@ -1,0 +1,15 @@
+meta {
+  name: Seller: Ambil daftar pengajuan stok milik sendiri
+  type: http
+  seq: 111
+}
+
+get {
+  url: {{baseUrl}}/api/ecommerce/pengajuan-stok
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

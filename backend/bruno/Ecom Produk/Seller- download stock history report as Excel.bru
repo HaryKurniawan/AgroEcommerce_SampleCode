@@ -1,0 +1,20 @@
+meta {
+  name: Seller: download stock history report as Excel
+  type: http
+  seq: 62
+}
+
+get {
+  url: {{baseUrl}}/api/ecom-produk/penjual/:tokoId/laporan-stok/excel
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  startDate: 
+  endDate: 
+}

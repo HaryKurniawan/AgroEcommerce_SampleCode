@@ -1,0 +1,15 @@
+meta {
+  name: Mark messages as read
+  type: http
+  seq: 129
+}
+
+patch {
+  url: {{baseUrl}}/api/chat/conversations/:id/read
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

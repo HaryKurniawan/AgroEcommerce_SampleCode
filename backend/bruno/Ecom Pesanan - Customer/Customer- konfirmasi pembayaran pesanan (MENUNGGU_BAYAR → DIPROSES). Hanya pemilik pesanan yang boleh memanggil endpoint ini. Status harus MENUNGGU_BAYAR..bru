@@ -1,0 +1,15 @@
+meta {
+  name: Customer: konfirmasi pembayaran pesanan (MENUNGGU_BAYAR → DIPROSES). Hanya pemilik pesanan yang boleh memanggil endpoint ini. Status harus MENUNGGU_BAYAR.
+  type: http
+  seq: 81
+}
+
+post {
+  url: {{baseUrl}}/api/ecom-pesanan/:id/confirm-payment
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Verify email using token from email link
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/api/auth/verify-email
+  body: none
+  auth: none
+}
+
+query {
+  token: 
+}

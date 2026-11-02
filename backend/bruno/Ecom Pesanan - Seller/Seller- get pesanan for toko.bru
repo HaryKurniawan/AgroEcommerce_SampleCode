@@ -1,0 +1,22 @@
+meta {
+  name: Seller: get pesanan for toko
+  type: http
+  seq: 82
+}
+
+get {
+  url: {{baseUrl}}/api/ecom-pesanan/penjual/:tokoId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  status: 
+  page: 
+  limit: 
+  isGrosir: 
+}

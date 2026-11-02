@@ -1,0 +1,21 @@
+meta {
+  name: Get current pengguna pesanan
+  type: http
+  seq: 77
+}
+
+get {
+  url: {{baseUrl}}/api/ecom-pesanan/my-pesanan
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  status: 
+  page: 
+  limit: 
+}

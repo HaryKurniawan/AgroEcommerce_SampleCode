@@ -1,0 +1,15 @@
+meta {
+  name: Admin: Reject takedown
+  type: http
+  seq: 176
+}
+
+patch {
+  url: {{baseUrl}}/api/ulasan/admin/:id/reject-takedown
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

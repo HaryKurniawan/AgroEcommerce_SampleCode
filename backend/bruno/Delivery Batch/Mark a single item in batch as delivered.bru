@@ -1,0 +1,15 @@
+meta {
+  name: Mark a single item in batch as delivered
+  type: http
+  seq: 181
+}
+
+post {
+  url: {{baseUrl}}/api/delivery-batch/kurir/batches/:batchId/items/:pesananId/delivered
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

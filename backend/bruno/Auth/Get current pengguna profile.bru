@@ -1,0 +1,15 @@
+meta {
+  name: Get current pengguna profile
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/api/auth/profile
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

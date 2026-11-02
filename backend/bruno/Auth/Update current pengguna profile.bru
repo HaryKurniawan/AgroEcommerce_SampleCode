@@ -1,0 +1,21 @@
+meta {
+  name: Update current pengguna profile
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{baseUrl}}/api/auth/profile
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

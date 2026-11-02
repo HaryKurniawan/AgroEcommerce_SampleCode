@@ -1,0 +1,15 @@
+meta {
+  name: Get pesanan by ID
+  type: http
+  seq: 79
+}
+
+get {
+  url: {{baseUrl}}/api/ecom-pesanan/:id
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

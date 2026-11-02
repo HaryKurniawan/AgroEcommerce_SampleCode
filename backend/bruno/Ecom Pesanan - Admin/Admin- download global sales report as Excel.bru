@@ -1,0 +1,20 @@
+meta {
+  name: Admin: download global sales report as Excel
+  type: http
+  seq: 89
+}
+
+get {
+  url: {{baseUrl}}/api/ecom-pesanan/admin/laporan/excel
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  startDate: 
+  endDate: 
+}

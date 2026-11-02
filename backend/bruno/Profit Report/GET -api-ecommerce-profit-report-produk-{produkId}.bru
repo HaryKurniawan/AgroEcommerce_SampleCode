@@ -1,0 +1,23 @@
+meta {
+  name: GET /api/ecommerce/profit-report/produk/{produkId}
+  type: http
+  seq: 106
+}
+
+get {
+  url: {{baseUrl}}/api/ecommerce/profit-report/produk/:produkId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  limit: 
+  page: 
+  status: 
+  endDate: 
+  startDate: 
+}

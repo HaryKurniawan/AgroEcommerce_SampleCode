@@ -1,0 +1,53 @@
+import {
+  IsEmail,
+  IsEnum,
+  IsNotEmpty,
+  IsOptional,
+  IsString,
+  MinLength,
+} from "class-validator";
+import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
+import { Peran } from "@prisma/client";
+
+export class RegisterDto {
+  @ApiProperty({ example: "pengguna@agrojabar.id" })
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+
+  @ApiProperty({ example: "password123", minLength: 6 })
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(6)
+  kataSandi: string;
+
+  @ApiPropertyOptional({ example: "081234567890" })
+  @IsString()
+  @IsOptional()
+  noTelepon?: string;
+
+  @ApiProperty({ example: "John Doe" })
+  @IsString()
+  @IsNotEmpty()
+  nama: string;
+
+  @ApiPropertyOptional({ enum: Peran, example: Peran.KONSUMEN })
+  @IsEnum(Peran)
+  @IsOptional()
+  peran?: Peran;
+
+  @ApiPropertyOptional({ example: "PT Contoh Maju" })
+  @IsString()
+  @IsOptional()
+  namaPerusahaan?: string;
+
+  @ApiPropertyOptional({ example: "123456789012345" })
+  @IsString()
+  @IsOptional()
+  npwpPerusahaan?: string;
+
+  @ApiPropertyOptional({ example: "1234567890123" })
+  @IsString()
+  @IsOptional()
+  nibPerusahaan?: string;
+}

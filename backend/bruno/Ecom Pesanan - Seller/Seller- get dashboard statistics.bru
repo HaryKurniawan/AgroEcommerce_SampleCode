@@ -1,0 +1,15 @@
+meta {
+  name: Seller: get dashboard statistics
+  type: http
+  seq: 83
+}
+
+get {
+  url: {{baseUrl}}/api/ecom-pesanan/penjual/:tokoId/dashboard-stats
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

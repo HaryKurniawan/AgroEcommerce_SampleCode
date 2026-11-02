@@ -1,0 +1,21 @@
+meta {
+  name: Create new pesanan grosir (Beli Jumlah Besar)
+  type: http
+  seq: 93
+}
+
+post {
+  url: {{baseUrl}}/api/ecom-pesanan/grosir
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

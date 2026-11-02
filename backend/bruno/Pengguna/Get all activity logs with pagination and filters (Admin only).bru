@@ -1,0 +1,22 @@
+meta {
+  name: Get all activity logs with pagination and filters (Admin only)
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/api/pengguna/log-aktivitas
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  page: 
+  limit: 
+  kategori: 
+  search: 
+}

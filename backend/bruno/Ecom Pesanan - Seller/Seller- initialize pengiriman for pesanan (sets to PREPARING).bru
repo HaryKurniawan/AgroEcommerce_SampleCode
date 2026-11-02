@@ -1,0 +1,21 @@
+meta {
+  name: Seller: initialize pengiriman for pesanan (sets to PREPARING)
+  type: http
+  seq: 85
+}
+
+post {
+  url: {{baseUrl}}/api/ecom-pesanan/:id/pengiriman
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Create seller with courier affiliation
+  type: http
+  seq: 19
+}
+
+post {
+  url: {{baseUrl}}/api/pengguna/penjual-with-courier
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

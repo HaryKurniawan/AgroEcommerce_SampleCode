@@ -1,0 +1,21 @@
+meta {
+  name: Map a master produk to a warehouse product (Admin only)
+  type: http
+  seq: 138
+}
+
+post {
+  url: {{baseUrl}}/api/master-produk/:id/mapping
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

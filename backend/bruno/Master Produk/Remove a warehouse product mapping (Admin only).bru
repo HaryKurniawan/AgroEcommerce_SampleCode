@@ -1,0 +1,15 @@
+meta {
+  name: Remove a warehouse product mapping (Admin only)
+  type: http
+  seq: 139
+}
+
+delete {
+  url: {{baseUrl}}/api/master-produk/:id/mapping/:mappingId
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

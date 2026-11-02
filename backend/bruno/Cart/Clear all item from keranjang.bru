@@ -1,0 +1,15 @@
+meta {
+  name: Clear all item from keranjang
+  type: http
+  seq: 71
+}
+
+delete {
+  url: {{baseUrl}}/api/keranjang
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

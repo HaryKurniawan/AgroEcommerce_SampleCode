@@ -1,0 +1,15 @@
+meta {
+  name: Seller: Buat pengajuan stok baru ke gudang
+  type: http
+  seq: 110
+}
+
+post {
+  url: {{baseUrl}}/api/ecommerce/pengajuan-stok
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

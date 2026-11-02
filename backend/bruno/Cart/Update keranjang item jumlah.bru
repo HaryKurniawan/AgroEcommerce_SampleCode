@@ -1,0 +1,21 @@
+meta {
+  name: Update keranjang item jumlah
+  type: http
+  seq: 74
+}
+
+patch {
+  url: {{baseUrl}}/api/keranjang/item/:id
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

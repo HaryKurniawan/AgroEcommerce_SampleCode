@@ -1,0 +1,21 @@
+meta {
+  name: Sync guest cart items with logged-in user cart
+  type: http
+  seq: 72
+}
+
+post {
+  url: {{baseUrl}}/api/keranjang/sync
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    
+  }
+}

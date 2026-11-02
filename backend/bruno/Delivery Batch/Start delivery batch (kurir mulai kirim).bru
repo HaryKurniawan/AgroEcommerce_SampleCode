@@ -1,0 +1,15 @@
+meta {
+  name: Start delivery batch (kurir mulai kirim)
+  type: http
+  seq: 180
+}
+
+post {
+  url: {{baseUrl}}/api/delivery-batch/kurir/batches/:id/start
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

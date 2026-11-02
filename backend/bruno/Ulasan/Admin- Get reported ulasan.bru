@@ -1,0 +1,21 @@
+meta {
+  name: Admin: Get reported ulasan
+  type: http
+  seq: 174
+}
+
+get {
+  url: {{baseUrl}}/api/ulasan/admin/reported
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+query {
+  page: 
+  limit: 
+  status: 
+}
