@@ -10,7 +10,7 @@ Repositori ini merupakan showcase arsitektur dan sample code untuk platform Agro
 >    Untuk melindungi hak kekayaan intelektual (proprietary logic) serta mencegah penggunaan instan (turn-key clone) tanpa otorisasi, beberapa file penghubung runtime inti sengaja dihilangkan:
 >    - Backend: Driver koneksi database utama (`src/infrastructure/database/prisma.service.ts`) dan skrip seeding (`prisma/seed.ts`) telah dihilangkan.
 >    - Frontend Operasional: Modul proxy handler (`src/lib/proxy-handler.ts`) dan API client utama (`src/lib/api-client.ts`) telah dihilangkan.
-> 3. Pembersihan Kredensial: Seluruh kredensial, API key, domain staging, dan environment produksi telah dibersihkan dan diganti dengan format safe `.env.example`.
+> `.env.example`.
 
 ---
 
